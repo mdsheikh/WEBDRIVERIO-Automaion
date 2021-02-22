@@ -25,10 +25,23 @@ describe('E2E Login and LogOut Flow', () => {
 
 
     it('Should login with VALID credentials', () => {
+        $('//*[@id="signin_button"]').waitForExist()
+        $('//*[@id="signin_button"]').click()
+        $('//*[@id="user_login"]').waitForExist()
+        $('//*[@id="user_login"]').setValue('username')
+        $('//*[@id="user_password"]').setValue('password')
+        $('//*[@id="login_form"]/div[2]/input').click()
+        $('//*[@id="feedback-title"]').waitForExist()
 
     })
 
     it('Should LogOut Successfully', () => {
+
+        $('.icon-user').waitForExist()
+        $('.icon-user').click()
+        $('#logout_link').waitForExist()
+        $('#logout_link').click()
+        $('#pages-nav').waitForExist()
 
     })
 
