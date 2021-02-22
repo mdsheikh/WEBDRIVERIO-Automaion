@@ -44,5 +44,6 @@ describe('E2E Login and LogOut Flow', () => {
         $('#pages-nav').waitForExist()
 
     })
+    
 
 })

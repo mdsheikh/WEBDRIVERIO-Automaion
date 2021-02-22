@@ -18,12 +18,14 @@ exports.config = {
     //
     specs: [
         //'./tests/**.js'
-        './tests/E2E/**.js'
+        //'./tests/E2E/**.js'
+        './tests/E2E-SwagLabs/**.js'
     ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
-        './tests/example.js', './tests/actions.js'
+        './tests/example.js', './tests/actions.js', './tests/E2E/feedback.js', './tests/E2E/login.js',
+        './tests/E2E-SwagLabs/login.js'
 
     ],
     //

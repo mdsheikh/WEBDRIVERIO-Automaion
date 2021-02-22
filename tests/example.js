@@ -120,16 +120,4 @@ describe('First step with webdriveIO', () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 })
